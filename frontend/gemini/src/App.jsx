@@ -5,9 +5,12 @@ import "./App.css";
 
 //!Function that must return a promise (useMuthation)
 const makeRequestAPI = async (prompt) => {
-  const res = await axios.post("https://gemini-backend-8n9a.onrender.com", {
-    prompt,
-  });
+  const res = await axios.post(
+    "https://gemini-backend-8n9a.onrender.com/generate",
+    {
+      prompt,
+    }
+  );
   return res.data;
 };
 
