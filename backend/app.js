@@ -50,8 +50,13 @@ const app = express();
 // Middleware
 app.use(express.json());
 const corsOptions = {
-  origin: ["http://localhost:5173", "http://localhost:5174"],
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "https://gemini-frontend-89y9.onrender.com",
+  ],
 };
+
 app.use(cors(corsOptions)); // Enable CORS for specific origins
 app.use(express.json());
 
