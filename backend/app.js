@@ -70,6 +70,13 @@ app.get("/", (req, res) => {
 
 // Generate content route
 app.post("/generate", async (req, res) => {
+  // Add CORS headers manually
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://gemini-frontend-89y9.onrender.com"
+  );
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   try {
     const { prompt } = req.body;
     if (!prompt) {
