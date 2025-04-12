@@ -16,6 +16,7 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(10px); /* Add this line */
   backdrop-filter: blur(10px);
 }
 
