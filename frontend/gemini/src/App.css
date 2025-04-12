@@ -16,13 +16,13 @@ body {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  -webkit-backdrop-filter: blur(10px); /* Add this line */
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
 }
 
 /* Title */
 h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2.5rem, 7vw, 4rem); /* Adjusted font size */
   font-weight: bold;
   color: #facc15;
   margin-bottom: 1rem;
@@ -33,6 +33,8 @@ h1 {
 p {
   font-size: clamp(1rem, 2vw, 1.2rem);
   margin-bottom: 1.5rem;
+  line-height: 1.8; /* Increased spacing for readability */
+  text-align: left; /* Changed to left-aligned */
 }
 
 /* Input Styling */
@@ -68,8 +70,8 @@ button {
 }
 
 button:hover {
-  background: #eab308;
-  transform: scale(1.05);
+  background: #facc15; /* Brighter hover color */
+  color: #233d5a; /* Change text color for contrast */
 }
 
 button:active {
@@ -79,10 +81,13 @@ button:active {
 /* Response Messages */
 .App-response {
   margin-top: 20px;
+  padding: 1rem; /* Added padding for better spacing */
 }
 
 .App-response p {
   font-size: 1rem;
+  text-align: left; /* Change to left-aligned */
+  line-height: 1.8; /* Increased line height for improved readability */
 }
 
 /* Responsive Design */
@@ -105,9 +110,7 @@ header {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Softer shadow for better contrast */
 }
 
-/* Paragraph */
-p {
-  font-size: clamp(1rem, 2vw, 1.2rem);
-  margin-bottom: 1.5rem;
-  line-height: 1.6; /* Adjust this value for more or less spacing */
+/* Bold Styling for Key Terms */
+.bold {
+  font-weight: bold;
 }
